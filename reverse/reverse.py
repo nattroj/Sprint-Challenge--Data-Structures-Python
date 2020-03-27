@@ -50,9 +50,6 @@ class LinkedList:
         if not self.head:
             return None
 
-        if not self.head.get_next:
-            return self.head
-        
         if node.get_next():
             self.reverse_list(node.get_next(), node)
         else:
